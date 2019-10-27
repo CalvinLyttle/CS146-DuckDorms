@@ -7,99 +7,153 @@
 	</head>
 	<body>
 		<header>
-			<h1>Duck Dorms</h1>
+			<h1><a href = "duckDorms.html" class="mainpage">Duck Dorms</a></h1>
 			<ul>
 				<li>About</li>
-				<li>Dorm Profiles</li>
-				<li>Survey</li>
+				<li><a href = "profiles.html" class="pagelink">Dorm Profiles</a></li>
+				<li><a href = "duckDormsForm.html" class="pagelink">Survey</a></li>
 			</ul>
 		</header>
 		<div class = "formBox">
 			<h2 id = "message">Would you prefer a single, double, triple, quad, or an apartment style (6 person) dorm?</h2>
 			<form>
-				<label for="single">Single</label>
-				<input type = "radio" name = "dorm" id = "single" value = "single"><br>
-				<label for="double">Double</label>
-				<input type = "radio" name = "dorm" id = "double" value = "double"><br>
-				<label for="triple">Triple</label>
-				<input type = "radio" name = "dorm" id = "triple" value = "triple"><br>
-				<label for="quad">Quad</label>
-				<input type = "radio" name = "dorm" id = "quad" value = "quad"><br>
-				<label for="apt">Apartment Style</label>
-				<input type = "radio" name = "dorm" id = "apt" value = "apt">
+				<section>
+					<input type = "radio" name = "dorm" id = "single" value = "single">
+					<label for="single">Single</label>
+				</section>
+				<section>
+					<input type = "radio" name = "dorm" id = "double" value = "double">
+					<label for="double">Double</label>
+				</section>
+				<section>
+					<input type = "radio" name = "dorm" id = "triple" value = "triple">
+					<label for="triple">Triple</label>
+				</section>
+				<section>
+					<input type = "radio" name = "dorm" id = "quad" value = "quad">
+					<label for="quad">Quad</label>
+				</section>
+				<section>
+					<input type = "radio" name = "dorm" id = "apt" value = "apt">
+					<label for="apt">Apartment Style</label>
+				</section>
 			</form>
 			<h2 id = "message">How important is having a private bathroom to you?</h2>
 			<form>
-				<label for="single">Single</label>
-				<input type = "radio" name = "dorm" id = "single" value = "single"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>
-			<h2 id = "message">How important is having your own airconditioner to you?</h2>
+			<h2 id = "message">How important is having your own air conditioner to you?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>
-			<h2 id = "message">Are you factoring in the cost of the dorm compared to others into your final decision?</h2>
+			<h2 id = "message">How important is the cost of the dorm?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>	
 			<h2 id = "message">How important is your dorm's proximity to classes?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>	
-			<h2 id = "message">How much time do you think you will be spending in your dorm's communal lounge?</h2>
+			<h2 id = "message">How important is the quality of a communal lounge?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>	
-			<h2 id = "message">Do you want a dorm with a view of Manhattan?</h2>
+			<h2 id = "message">How important is a dorm with a view of Manhatten?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>	
-			<h2 id = "message">Would you say you need more than the "average" amount of dorm storage?</h2>
+			<h2 id = "message">How important is the amount of given storage in the dorm room?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>	
-			<h2 id = "message">Does it matter to you whether your floor is gender neutral or not?</h2>
+			<h2 id = "message">How important are co-ed floors?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>	
-			<h2 id = "message">Do you want to have a room assistant office in your dorm building?</h2>
+			<h2 id = "message">How important is it that the dorm building has an RA (residental advisor) office?</h2>
 			<form>
-				<input type = "radio" name = "dorm" id = "1" value = "1"><br>
-				<input type = "radio" name = "dorm" id = "2" value = "2"><br>
-				<input type = "radio" name = "dorm" id = "3" value = "3"><br>
-				<input type = "radio" name = "dorm" id = "4" value = "4"><br>
+				<input type = "radio" name = "dorm" id = "1" value = "1">
+				<label for="1">Very Important</label><br>
+				<input type = "radio" name = "dorm" id = "2" value = "2">
+				<label for="2">Somewhat Important</label><br>
+				<input type = "radio" name = "dorm" id = "3" value = "3">
+				<label for="3">Neutral</label><br>
+				<input type = "radio" name = "dorm" id = "4" value = "4">
+				<label for="4">Somewhat Not Important</label><br>
 				<input type = "radio" name = "dorm" id = "5" value = "5">
+				<label for="5">Very Not Important</label>
 			</form>	
 		</div>
 	</body>
