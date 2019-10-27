@@ -6,14 +6,26 @@ ul li{
 	padding: 20px;
 }
 h1{
-	color: purple;
+	margin: 10px;
 }
-header{
-	background-color: #b0a7a9;
+.mainpage {
+	text-decoration: none;
+	color: #a60202;
+}
+.pagelink:hover {
+	font-weight: bold;
+}
+.pagelink{
+	text-decoration: none;
+	color: black;
+}
+header {
+	margin: 10px;
+	background-color: #ededed;
 	vertical-align: text-top;
 	display: flex;
 	align-items: center;
-	box-shadow: box-shadow: 0px 0px 4px black;
+	box-shadow: 0px 0px 4px black;
 	border-radius: 4px;
 }
 button{
@@ -29,7 +41,8 @@ button{
 	padding-bottom: 16px;
 	box-shadow: 0px 0px 4px black;
 	border-radius: 4px;
-	width: 600px; 
+	width: 800px; 
+	height: 100px;
 	display: flex;
 	flex-flow: column; 
 	align-content: center;
@@ -46,17 +59,24 @@ button{
 	padding-bottom: 16px;
 	box-shadow: 0px 0px 4px black;
 	border-radius: 4px;
-	width: 600px; 
+	width: 800px;
 }
 body{
 	font-family: candara;
-	background-color: #fcd4d2;
-}
-label{
-	text-align: right;
+	background-color:#fae6e9;
 }
 #message{
 	font-size: 20px;
+	text-align: center;
+	margin: 10px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	display: inline-block;
 	text-align: left;
-	margin-left: 3px;
 }
