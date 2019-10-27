@@ -80,3 +80,18 @@ section {
 	display: inline-block;
 	text-align: left;
 }
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #5c5959;
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+   }
+footer ul li{
+	list-style: none;
+	display: list-item;
+	padding: 0px;
+}
