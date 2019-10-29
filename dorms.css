@@ -41,7 +41,8 @@ header{
 }
 main{
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
 }
 .image{
 	height: 200px;
