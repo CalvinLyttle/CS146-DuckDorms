@@ -76,24 +76,37 @@ form {
 	justify-content: center;
 	align-items: center;
 }
-section {
+section{
 	display: inline-block;
 	text-align: left;
 }
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
+	left: 0;
 	width: 100%;
-	background-color: #5c5959;
+	background-color: #790000;
 	display:flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-   }
-footer ul li{
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 14px;
+}
+footer ul{
 	list-style: none;
-	display: list-item;
+	display: flex;
+	flex-flow: row nowrap;
 	padding: 0px;
+	text-transform: uppercase;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	font-weight: bold;
 }
 div{
 	font-size: 42px;
@@ -101,4 +114,7 @@ div{
 }
 td{
 	font-size: 24px;
+}
+#joke{
+	color: #fae6e9;
 }
