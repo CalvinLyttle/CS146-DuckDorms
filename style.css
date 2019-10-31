@@ -30,6 +30,7 @@ header {
 	border-radius: 4px;
 }
 button{
+	margin: 20px;
 	width: 50%;
 }
 .wholepage{
@@ -50,7 +51,7 @@ button{
 	box-shadow: 0px 0px 4px black;
 	border-radius: 4px;
 	width: 800px; 
-	height: 100px;
+	height: auto;
 	display: flex;
 	flex-flow: column; 
 	align-content: center;
@@ -152,4 +153,9 @@ footer a:hover{
 }
 #joke{
 	color: #fae6e9;
+}
+#calcbutton{
+	height: 50px;
+	width: 30%;
+	margin:50px;
 }
