@@ -100,3 +100,44 @@ footer a:hover{
         justify-content: center;
 	}
 }
+
+@media screen and (max-width: 998px) and (min-width: 575px) {
+	header{
+		justify-content: center;
+	}
+	.image{
+		width: 50%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 574px){
+	header{
+		flex-direction: column;
+        text-align: center;
+	}
+	.container{
+		flex-flow: column wrap;
+		text-align: center;
+	}
+	.description h3 {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+	}
+	.image{
+		width: 50%;
+		height: auto;
+		margin-top: 5px;
+	}
+	footer{
+		flex-flow: column-reverse wrap;
+	}
+	ul li{
+		display: block;
+		padding: 5px;
+	}
+	ul{
+		padding-inline-start: 0px;
+	}
+}
