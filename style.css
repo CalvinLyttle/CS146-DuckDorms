@@ -167,6 +167,30 @@ footer a:hover{
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
+.privpage{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.priv-box{
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	box-shadow: 0px 0px 4px black;
+	border-radius: 4px;
+	width: 800px; 
+	height: auto;
+	display: flex;
+	flex-flow: column; 
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
 
 
 @media screen and (min-width: 999px){
@@ -204,6 +228,10 @@ footer a:hover{
 	}
 	.formBox{
 		width: 90%;
+	}
+	.priv-box{
+		max-width: 550px;
+		font-size: 90%;
 	}
 }
 
@@ -243,5 +271,9 @@ footer a:hover{
 	}
 	label{
 		font-size: 85%;
+	}
+	.priv-box{
+		width: 85%;
+		font-size: 90%;
 	}
 }
