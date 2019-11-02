@@ -32,6 +32,9 @@ header {
 button{
 	margin: 20px;
 	width: 50%;
+	background-color: #ededed;
+	color: black;
+	border-radius: 4px;
 }
 .wholepage{
 	display: flex;
@@ -69,10 +72,13 @@ button{
 	box-shadow: 0px 0px 4px black;
 	border-radius: 4px;
 	width: 800px;
+	display: flex;
+	flex-flow: column wrap;
 }
 body{
 	font-family: candara;
 	background-color:#fae6e9;
+	margin: 0px;
 }
 #message{
 	font-size: 20px;
@@ -124,6 +130,7 @@ footer a:hover{
 	text-align: center;
 	background-color: white;
 	margin: 10px;
+	padding: 5px;
 	box-shadow: 0px 0px 4px black;
 	border-radius: 4px;
 	width: 800px;
@@ -156,6 +163,85 @@ footer a:hover{
 }
 #calcbutton{
 	height: 50px;
-	width: 30%;
-	margin:50px;
+	width: 20%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 999px){
+}
+
+@media screen and (max-width: 730px){
+	form {
+		flex-flow: column wrap;
+	}
+	.formBox{
+		width: 85%;
+		margin-bottom: 120px;
+	}
+	section{
+		padding: 5px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 998px) and (min-width: 575px) {
+	header{
+		justify-content: center;
+	}
+	.box{
+		width: 85%;
+	}
+	.about-box{
+		width: 90%;
+	}
+	.about-box h1{
+		font-size: 150%;
+	}
+	.about-box p{
+		font-size: 150%;
+	}
+	.formBox{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 574px){
+	header{
+		flex-direction: column;
+        text-align: center;
+	}
+	footer{
+		flex-flow: column-reverse wrap;
+	}
+	ul li{
+		display: block;
+		padding: 5px;
+	}
+	ul{
+		padding-inline-start: 0px;
+	}
+	.image{
+		width: 70%;
+		height: auto;
+	}
+	.about-box{
+		width: 85%;
+	}
+	.about-box h1{
+		font-size: 90%;
+	}
+	.about-box p{
+		font-size: 90%;
+	}
+	.box{
+		width: 95%
+	}
+	#message{
+		font-size: 95%;
+	}
+	label{
+		font-size: 85%;
+	}
 }
