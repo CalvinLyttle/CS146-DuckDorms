@@ -14,10 +14,11 @@
 				<li><a href = "duckDormsForm.html" class="pagelink">Survey</a></li>
 			</ul>
 		</header>
-		<div class = "formBox">
-			<form>
+		<div>
+			<form class="formBox">
 			<h2 id = "message">Would you prefer a single, double, triple, quad, or an apartment style (6 person) dorm?</h2>
 			<br>
+			<div class="question">
 				<section>
 					<input type = "radio" name = "q1" id = "single" value = "single">
 					<label for="single">Single</label>
@@ -38,9 +39,11 @@
 					<input type = "radio" name = "q1" id = "apt" value = "apt">
 					<label for="apt">Apartment Style</label>
 				</section>
+			</div>
 			<br>
 			<h2 id = "message">How important is having a private bathroom to you?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q2" id = "bathroom1" value = "1">
 					<label for="bathroom1">Very Important</label>
@@ -61,10 +64,11 @@
 					<input type = "radio" name = "q2" id = "bathroom5" value = "5">
 					<label for="bathroom5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important is having your own air conditioner to you?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q3" id = "ac1" value = "1">
 					<label for="ac1">Very Important</label>
@@ -85,10 +89,11 @@
 					<input type = "radio" name = "q3" id = "ac5" value = "5">
 					<label for="ac5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important is the cost of the dorm?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q4" id = "cost1" value = "1">
 					<label for="cost1">Very Important</label>
@@ -109,10 +114,11 @@
 					<input type = "radio" name = "q4" id = "cost5" value = "5">
 					<label for="cost5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important is your dorm's proximity to classes?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q5" id = "prox1" value = "1">
 					<label for="prox1">Very Important</label>
@@ -133,10 +139,11 @@
 					<input type = "radio" name = "q5" id = "prox5" value = "5">
 					<label for="prox5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important is the quality of a communal lounge?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q6" id = "lounge1" value = "1">
 					<label for="lounge1">Very Important</label>
@@ -157,10 +164,11 @@
 					<input type = "radio" name = "q6" id = "lounge5" value = "5">
 					<label for="lounge5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important is a dorm with a view of Manhatten?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q7" id = "view1" value = "1">
 					<label for="view1">Very Important</label>
@@ -181,10 +189,11 @@
 					<input type = "radio" name = "q7" id = "view5" value = "5">
 					<label for="view5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important is the amount of given storage in the dorm room?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q8" id = "storage1" value = "1">
 					<label for="storage1">Very Important</label>
@@ -205,10 +214,11 @@
 					<input type = "radio" name = "q8" id = "storage5" value = "5">
 					<label for="storage5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important are co-ed floors?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q9" id = "floor1" value = "1">
 					<label for="floor1">Very Important</label>
@@ -229,10 +239,11 @@
 					<input type = "radio" name = "q9" id = "floor5" value = "5">
 					<label for="floor5">Very Not Important</label>
 				</section>
-			
+			</div>
 			<br>
 			<h2 id = "message">How important is it that the dorm building has an RA (residental advisor) office?</h2>
 			<br>
+			<div class="question">
 				<section>	
 					<input type = "radio" name = "q10" id = "ra1" value = "1">
 					<label for="ra1">Very Important</label>
@@ -253,7 +264,8 @@
 					<input type = "radio" name = "q10" id = "ra5" value = "5">
 					<label for="ra5">Very Not Important</label>
 				</section>
-				<button type="button" id="calcbutton" onclick="location.href='result.html'">Calculate Result</button>
+			</div>
+			<button type="button" id="calcbutton" onclick="location.href='result.html'">Calculate Result</button>
 			</form>	
 		</div>
 		
