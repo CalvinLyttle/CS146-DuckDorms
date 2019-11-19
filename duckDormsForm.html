@@ -15,13 +15,14 @@
 			</ul>
 		</header>
 		<div>
-			<form class="formBox" action="result.html">
+			<form class="formBox">
 				<h1>Duck Dorms Survey</h1>
 				<br>
+				<h3 id="error"></h3>
 				<h2 class="message">Enter your name:</h2>
 				<input type="text" name="name" id="name">
 				<h2 class="message">Enter your college grade:</h2>
-				<select name = "grade">
+				<select name = "grade" id="grade">
 					<option value="freshman">Freshman</option>
 					<option value="sophmore">Sophmore</option>
 					<option value="junior">Junior</option>
@@ -278,7 +279,8 @@
 				</section>
 			</div>
 			<br>
-			<input type="submit" value="Submit">
+			<script src="survey.js"></script>
+			<input type="submit" value="Submit" onclick=validateForm()>
 			</form>	
 		</div>
 		
