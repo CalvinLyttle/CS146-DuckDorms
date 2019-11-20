@@ -69,29 +69,3 @@ function validateForm(){
         a = sort(dormArray);
     }
 }
-
-
-
-function initalizeMatches(){
-    document.querySelector("#Form").classList.remove("hide");
-
-    var node = document.querySelector("main div");
-    node.classList.add("hide");
-}
-
-function displayMatches(matches){
-    document.querySelector("#Form").classList.add("hide");
-
-
-
-    var hall1 = matches[0].name;
-    var hall2 = matches[1].name;
-    var hall3 = matches[2].name;
-
-    document.querySelector("#"+toString(hall1)).classList.remove("hide");
-    document.querySelector("#"+toString(hall1)).classList.add("match1");
-    document.querySelector("#"+toString(hall2)).classList.remove("hide");
-    ocument.querySelector("#"+toString(hall1)).classList.add("match2");
-    document.querySelector("#"+toString(hall3)).classList.remove("hide");
-    ocument.querySelector("#"+toString(hall1)).classList.add("match3");
-}
