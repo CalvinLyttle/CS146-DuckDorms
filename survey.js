@@ -49,7 +49,6 @@ function sort(li){
 function validateForm(){
     var name = document.getElementById("name").value;
     var grade = document.getElementById("grade").value;
-    var q1 = document.querySelector('input[name="q1"]:checked').value;
 
     user.push(document.querySelector('input[name="q2"]:checked').value);
     user.push(document.querySelector('input[name="q3"]:checked').value);
