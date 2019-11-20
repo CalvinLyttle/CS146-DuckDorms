@@ -1,4 +1,4 @@
-ul{
+header ul{
 	list-style: none;
 }
 ul li{
@@ -149,7 +149,7 @@ footer a:hover{
 	font-size: 50px;
 	font-weight: normal;
 }
-.image{
+.logo{
 	width: 421px;
 	height: 169px;
 	background-color: white;
@@ -198,6 +198,45 @@ footer a:hover{
 	text-align: center;
 }
 
+.image{
+	height: 200px;
+    width: 300px;
+    margin-right: 10px;
+}
+h3{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.description{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+	align-items: center;
+	box-shadow: 0px 0px 4px black;
+}
+main{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+}
+.hide{
+	display: none;
+}
+
+.match1{
+	order: 1;
+}
+.match2 {
+	order: 2;
+}
+.match3 {
+	order: 3;
+}
 
 @media screen and (min-width: 999px){
 }
