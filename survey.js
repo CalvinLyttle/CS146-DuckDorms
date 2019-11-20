@@ -9,12 +9,12 @@ class Dorm{
     }
 }
 
-var Davis  = new Dorm([0,1,1,1,1,1,0,0,1], "Davis Hall");
-var CPH    = new Dorm([1,1,1,0,0,1,1,1,0], "Castle Point Hall");
-var Palmer = new Dorm([0,1,1,0,0,0,1,0,0], "Palmer Hall");
-var River  = new Dorm([1,1,0,1,0,0,1,0,0], "River Terrace");
-var Jonas  = new Dorm([1,0,1,0,1,0,1,1,1], "Jonas Hall");
-var Humps  = new Dorm([0,1,1,0,0,0,1,0,1], "Humphreys Hall");
+var Davis  = new Dorm([0,1,1,1,1,1,0,0,1], "Davis");
+var CPH    = new Dorm([1,1,1,0,0,1,1,1,0], "CPH");
+var Palmer = new Dorm([0,1,1,0,0,0,1,0,0], "Palmer");
+var River  = new Dorm([1,1,0,1,0,0,1,0,0], "River");
+var Jonas  = new Dorm([1,0,1,0,1,0,1,1,1], "Jonas");
+var Humps  = new Dorm([0,1,1,0,0,0,1,0,1], "Humphreys");
 
 var dormArray= [Davis, CPH, Palmer, River, Jonas, Humps];
 var user = [];
@@ -67,31 +67,22 @@ function validateForm(){
     else{
         getScore(user);
         a = sort(dormArray);
+        displayMatches(a);
     }
 }
 
 
-
-function initalizeMatches(){
-    document.querySelector("#Form").classList.remove("hide");
-
-    var node = document.querySelector("main div");
-    node.classList.add("hide");
-}
-
 function displayMatches(matches){
     document.querySelector("#Form").classList.add("hide");
-
-
 
     var hall1 = matches[0].name;
     var hall2 = matches[1].name;
     var hall3 = matches[2].name;
 
-    document.querySelector("#"+toString(hall1)).classList.remove("hide");
-    document.querySelector("#"+toString(hall1)).classList.add("match1");
-    document.querySelector("#"+toString(hall2)).classList.remove("hide");
-    ocument.querySelector("#"+toString(hall1)).classList.add("match2");
-    document.querySelector("#"+toString(hall3)).classList.remove("hide");
-    ocument.querySelector("#"+toString(hall1)).classList.add("match3");
+    document.querySelector("#"+hall1).classList.remove("hide");
+    document.querySelector("#"+hall1).classList.add("match1");
+    document.querySelector("#"+hall2).classList.remove("hide");
+    document.querySelector("#"+hall2).classList.add("match2");
+    document.querySelector("#"+hall3).classList.remove("hide");
+    document.querySelector("#"+hall3).classList.add("match3");
 }
