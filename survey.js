@@ -1,70 +1,54 @@
-/* List of the values that the user submitted on the form*/
-var user  = []
+class Dorm{
+    constructor(array,name){
+        this.score=0;
+        this.array=array;
+        this.name=name;
+    }
+    addScore(index, val){
+        this.score+=this.array[index]*val;
+    }
+}
 
-/* Each Dorm Halls answers to the questions 
+var Davis  = new Dorm([0,1,1,1,1,1,0,0,1], "Davis Hall");
+var CPH    = new Dorm([1,1,1,0,0,1,1,1,0], "Castle Point Hall");
+var Palmer = new Dorm([0,1,1,0,0,0,1,0,0], "Palmer Hall");
+var River  = new Dorm([1,1,0,1,0,0,1,0,0], "River Terrace");
+var Jonas  = new Dorm([1,0,1,0,1,0,1,1,1], "Jonas Hall");
+var Humps  = new Dorm([0,1,1,0,0,0,1,0,1], "Humphreys Hall");
 
-Order: bathroom, ac, cost, class closeness, lounge, view, storage, co-ed, RA
+var dormArray= [Davis, CPH, Palmer, River, Jonas, Humps];
+var user = [];
 
-NOTE: need real values here */
-var Davis  = [1,0,1,1,0,1,0,1,1]
-var CPH    = [0,1,1,1,0,0,1,1,1]
-var Palmer = [0,1,1,1,0,0,1,1,1]
-var River  = [0,1,1,1,0,0,1,1,1]
-var Jonas  = [0,1,1,1,0,0,1,1,1]
-var Humps  = [0,1,1,1,0,0,1,1,1]
-
-var dormValues = [Davis, CPH, Palmer, River, Jonas, Humps];
-
-/* Scores for each dorm */
-var dScore = 0;
-var cScore = 0;
-var pScore = 0;
-var rScore = 0;
-var jScore = 0;
-var hScore = 0;
-
-/* List of the final scores of the dorm halls
-Order: Davis, CPH, Palmer, River, Jonas, Humps */
-var dormScores = [0, 0, 0, 0, 0, 0];
-
-/* Uses the Dorm hall answers to calculate the score for each hall */
 function getScore(input){
-    for (i=0; i<dormScores.length; i++){
+    for (i=0; i<dormArray.length; i++){
         var total = 0;
         for (j=0; j<input.length; j++){
-            total += dormValues[i][j]*input[j];
+            total += dormArray[i].array[j]*input[j];
         }
-        dormScores[i] = total;
+        dormArray[i].score = total;
     }
-    setScores(dormScores);
 }
 
-/* Sets the score equal to the score calcuated in getScore() */
-function setScores(input){
-    dScore = input[0];
-    cScore = input[1];
-    pScore = input[2];
-    rScore = input[3];
-    jScore = input[4];
-    hScore = input[5];
+function sort(li){
+    var newArray=[];
+    for (i=0; i<3; i++){
+        var highest=-1;
+        var location=-1;
+        for(j=0;j<li.length;j++){
+            if(li[j].score>highest){
+                highest=li[j].score;
+                location=j;
+            }
+        }
+        newArray.push(li[location]);
+        li.splice(location,1);
+    }
+    return newArray;
 }
 
-/* Will order the list of dorms according to the lowest score
-
-NOTE:
-Within duckDormsForm.html, the value assigned for each question is opposite of what
-was expected in the first place. (Originally it was thought that the highest score
-would be the closest match but it reality, it is the lowest score that is the closest match) */
-function findMatches(){
-    
-}
-
-/* When the form is submitted, this function runs. This function check to make sure that
-a name, grade, and all the questions are answered. If all elements are filled out, it will
-run the rest of the functions to determine the order of results for them. */
 function validateForm(){
-    var name = document.getElementById("name").value
-    var grade = document.getElementById("grade").value
+    var name = document.getElementById("name").value;
+    var grade = document.getElementById("grade").value;
     var q1 = document.querySelector('input[name="q1"]:checked').value;
 
     user.push(document.querySelector('input[name="q2"]:checked').value);
@@ -82,6 +66,6 @@ function validateForm(){
     }
     else{
         getScore(user);
-        findMatches();
+        a = sort(dormArray);
     }
 }
