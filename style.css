@@ -208,7 +208,7 @@ main ul {
 h2{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin: 10px;
-	align-content: center;
+	align-self: center;
 }
 .image{
 	height: 200px;
