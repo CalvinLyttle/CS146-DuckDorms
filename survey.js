@@ -18,6 +18,8 @@ var Humps  = new Dorm([0,1,1,0,0,0,1,0,1], "Humphreys");
 
 var dormArray= [Davis, CPH, Palmer, River, Jonas, Humps];
 var user = [];
+var name = "";
+var grade = "";
 
 function getScore(input){
     for (i=0; i<dormArray.length; i++){
@@ -47,8 +49,8 @@ function sort(li){
 }
 
 function validateForm(){
-    var name = document.getElementById("name").value;
-    var grade = document.getElementById("grade").value;
+    name = document.getElementById("name").value;
+    grade = document.getElementById("grade").value;
 
     user.push(document.querySelector('input[name="q2"]:checked').value);
     user.push(document.querySelector('input[name="q3"]:checked').value);
@@ -60,13 +62,14 @@ function validateForm(){
     user.push(document.querySelector('input[name="q9"]:checked').value);
     user.push(document.querySelector('input[name="q10"]:checked').value);
     
-    if ((name == "") || (grade == "") || (q1 == "") || (user.length != 9)){
+    if ((name == "") || (grade == "") || (user.length != 9)){
         document.getElementById("error").innerHTML = "Please Fill Out the Form Completely.";
     }
     else{
         getScore(user);
         a = sort(dormArray);
         displayMatches(a);
+        displayName();
     }
 }
 
@@ -84,4 +87,12 @@ function displayMatches(matches){
     document.querySelector("#"+hall2).classList.add("match2");
     document.querySelector("#"+hall3).classList.remove("hide");
     document.querySelector("#"+hall3).classList.add("match3");
+}
+
+function displayName(){
+    var text = document.createTextNode(name+"'s Results");
+    var h2 = document.createElement("h2");
+    h2.appendChild(text);
+    h2.classList.add("resultname");
+    document.getElementById("Results").append(h2);
 }
