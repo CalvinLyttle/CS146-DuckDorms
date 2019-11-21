@@ -204,7 +204,6 @@ footer a:hover{
 
 main ul {
 	list-style: square;
-
 }
 h2{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -234,14 +233,13 @@ h3{
 }
 main{
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: column nowrap;
 	justify-content: center;
 	margin-bottom: 100px;
 }
 .hide{
 	display: none;
 }
-
 .resultname{
 	order: 1;
 }
