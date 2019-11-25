@@ -256,7 +256,7 @@ main{
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	width: 80%;
 }
 .hide{
@@ -293,7 +293,7 @@ main{
 	}
 	.formBox{
 		width: 85%;
-		margin-bottom: 120px;
+		margin-bottom: 80px;
 	}
 	section{
 		padding: 5px;
@@ -301,6 +301,13 @@ main{
 	}
 	.container{
 		width: 100%;
+	}
+	#alert{
+		width: 100%;
+		height: auto;
+	}
+	h3{
+		font-size: 80%;
 	}
 }
 
@@ -338,7 +345,6 @@ main{
 		flex-flow: column-reverse wrap;
 	}
 	ul li{
-		display: block;
 		padding: 5px;
 	}
 	ul{
@@ -369,5 +375,14 @@ main{
 	.priv-box{
 		width: 85%;
 		font-size: 90%;
+	}
+	.container{
+		flex-flow: column wrap;
+		text-align: center;
+	}
+	div li {
+		list-style: circle;
+		padding: 3px;
+		text-align: left;
 	}
 }
