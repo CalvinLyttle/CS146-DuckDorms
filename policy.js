@@ -10,4 +10,4 @@ function allow(){
     window.alert("Allow EVERYTHING");
 }
 
-allow()
+window.onload = allow()
