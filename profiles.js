@@ -26,7 +26,7 @@ function checkImages(){
 checkImages()
 
 /*
-var div = document.getElementById("overlay")
+var div = document.getElementsByClassName("overlay");
 
 function increaseOpacity(){
     div.style.opacity = 1;
@@ -36,7 +36,7 @@ function increaseOpacity(){
     div.style.opacity = 0;
  }
 
- img1.addEventListener("mouseover",increaseOpacity);
- img1.addEventListener("mouseleave",decreaseOpacity);
+ div.addEventListener("mouseover",increaseOpacity);
+ div.addEventListener("mouseleave",decreaseOpacity);
 
  */
