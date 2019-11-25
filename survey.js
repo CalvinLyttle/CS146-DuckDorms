@@ -49,27 +49,30 @@ function sort(li){
 }
 
 function validateForm(){
-    name = document.getElementById("name").value;
-    grade = document.getElementById("grade").value;
 
-    user.push(document.querySelector('input[name="q2"]:checked').value);
-    user.push(document.querySelector('input[name="q3"]:checked').value);
-    user.push(document.querySelector('input[name="q4"]:checked').value);
-    user.push(document.querySelector('input[name="q5"]:checked').value);
-    user.push(document.querySelector('input[name="q6"]:checked').value);
-    user.push(document.querySelector('input[name="q7"]:checked').value);
-    user.push(document.querySelector('input[name="q8"]:checked').value);
-    user.push(document.querySelector('input[name="q9"]:checked').value);
-    user.push(document.querySelector('input[name="q10"]:checked').value);
-    
-    if ((name == "") || (grade == "") || (user.length != 9)){
-        document.getElementById("error").innerHTML = "Please Fill Out the Form Completely.";
-    }
-    else{
+    try{
+        name = document.getElementById("name").value;
+        grade = document.getElementById("grade").value;
+
+        user.push(document.querySelector('input[name="q2"]:checked').value);
+        user.push(document.querySelector('input[name="q3"]:checked').value);
+        user.push(document.querySelector('input[name="q4"]:checked').value);
+        user.push(document.querySelector('input[name="q5"]:checked').value);
+        user.push(document.querySelector('input[name="q6"]:checked').value);
+        user.push(document.querySelector('input[name="q7"]:checked').value);
+        user.push(document.querySelector('input[name="q8"]:checked').value);
+        user.push(document.querySelector('input[name="q9"]:checked').value);
+        user.push(document.querySelector('input[name="q10"]:checked').value);
+
+        if (name == "") throw "empty";
+
         getScore(user);
         a = sort(dormArray);
         displayMatches(a);
         displayName();
+    }
+    catch(e){
+        window.alert("Please FIll Out the Form COMPLETELY");
     }
 }
 
@@ -96,3 +99,24 @@ function displayName(){
     h2.classList.add("resultname");
     document.getElementById("Results").append(h2);
 }
+
+function createAlert(){
+    var alert = document.querySelector("#alert");
+    alert.classList.remove("hide");
+    alert.classList.add("flex");
+}
+
+function deleteAlert(){
+    var alert = document.querySelector("#alert");
+    alert.classList.remove("flex");
+    alert.classList.add("hide");
+}
+
+document.getElementById("grade").addEventListener("change", function(e){
+    if (document.getElementById("grade").value != "freshman"){
+        createAlert();
+    }
+    else{
+        deleteAlert();
+    }
+  });
