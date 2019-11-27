@@ -24,19 +24,3 @@ function checkImages(){
 }
 
 checkImages()
-
-/*
-var div = document.getElementsByClassName("overlay");
-
-function increaseOpacity(){
-    div.style.opacity = 1;
- }
-
- function decreaseOpacity(){
-    div.style.opacity = 0;
- }
-
- div.addEventListener("mouseover",increaseOpacity);
- div.addEventListener("mouseleave",decreaseOpacity);
-
- */
