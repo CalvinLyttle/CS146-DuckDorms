@@ -73,6 +73,7 @@ function validateForm(){
     }
     catch(e){
         window.alert("Please FIll Out the Form COMPLETELY");
+        user = [];
     }
 }
 
