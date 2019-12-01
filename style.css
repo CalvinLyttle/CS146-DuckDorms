@@ -63,7 +63,7 @@ button{
 }
 .formBox{
 	background-color: white;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
@@ -251,15 +251,21 @@ h2{
 .image{
 	height: 200px;
     width: 300px;
-    margin-right: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 h3{
+	margin: 10px;
+	text-align: center;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .description{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: auto;
+    margin-right: auto;
 }
 .container{
     margin: 10px;
@@ -270,15 +276,30 @@ h3{
 	box-shadow: 0px 0px 4px black;
 	width:100%;
 }
+#alert{
+	margin: 10px;
+	background: white;
+	box-shadow: 0px 0px 4px black;
+	align-self: center;
+	flex-flow:row nowrap;
+	align-items: center;
+}
+.siren{
+	height:150px;
+	width: 150px;
+}
 main{
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	width: 80%;
 }
 .hide{
 	display: none;
+}
+.show{
+	display: block;
 }
 .resultname{
 	order: 1;
@@ -291,6 +312,9 @@ main{
 }
 .match3 {
 	order: 4;
+}
+.flex{
+	display: flex;
 }
 
 @media screen and (min-width: 999px){
@@ -305,7 +329,7 @@ main{
 	}
 	.formBox{
 		width: 85%;
-		margin-bottom: 120px;
+		margin-bottom: 80px;
 	}
 	section{
 		padding: 5px;
@@ -313,6 +337,13 @@ main{
 	}
 	.container{
 		width: 100%;
+	}
+	#alert{
+		width: 100%;
+		height: auto;
+	}
+	h3{
+		font-size: 80%;
 	}
 }
 
@@ -350,7 +381,6 @@ main{
 		flex-flow: column-reverse wrap;
 	}
 	ul li{
-		display: block;
 		padding: 5px;
 	}
 	ul{
@@ -381,5 +411,14 @@ main{
 	.priv-box{
 		width: 85%;
 		font-size: 90%;
+	}
+	.container{
+		flex-flow: column wrap;
+		text-align: center;
+	}
+	div li {
+		list-style: circle;
+		padding: 3px;
+		text-align: left;
 	}
 }
