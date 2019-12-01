@@ -22,6 +22,12 @@
                     For taking a few minutes of your time to complete this survey! We are aspiring web developers looking to make the selection of a Stevens freshman dorm as easy as possible!
                 </p>
             </div>
+            <div class = "slider-box">
+                <h1>Rate us 1 - 10!</h1>
+                <input type="range" min="1" max="10"
+                value="5" class="slider" id="mySlider">
+                <h1><span id="demo"></span></h1>
+            </div>
         </section>
         <footer>
                 <p id="copyright">&copy;2019 Barrientos Lyttle McGovern Paz</p>
@@ -32,4 +38,13 @@
                 </ul>
             </footer>
 	</body>
+    <script>
+        var slider = document.getElemenById("mySlider");
+        var output = document.getElementById ("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function(){
+            output.innerHTML = this.value;
+        }
+    </script>
 </html>
