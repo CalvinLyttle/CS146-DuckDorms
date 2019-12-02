@@ -1,4 +1,4 @@
-var slider = document.getElemenById("mySlider");
+var slider = document.getElementById("mySlider");
 var output = document.getElementById ("demo");
 output.innerHTML = slider.value;
 

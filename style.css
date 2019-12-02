@@ -355,13 +355,13 @@ main{
 		width: 85%;
 	}
 	.about-box{
-		width: 90%;
+		width: 100%;
 	}
 	.about-box h1{
-		font-size: 150%;
+		font-size: 90%;
 	}
 	.about-box p{
-		font-size: 150%;
+		font-size: 90%;
 	}
 	.formBox{
 		width: 90%;
@@ -369,6 +369,10 @@ main{
 	.priv-box{
 		max-width: 550px;
 		font-size: 90%;
+	}
+	.slider-box{
+		width: 100%;
+
 	}
 }
 
@@ -391,7 +395,7 @@ main{
 		height: auto;
 	}
 	.about-box{
-		width: 85%;
+		width: 100%;
 	}
 	.about-box h1{
 		font-size: 90%;
